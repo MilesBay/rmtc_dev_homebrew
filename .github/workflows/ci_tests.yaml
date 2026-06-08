@@ -25,6 +25,16 @@ jobs:
             - "3.11"
             - "3.12"
 
+    services:
+      age:
+        image: apache/age
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgresDB
+        ports:
+          - 5432:5432
+
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
