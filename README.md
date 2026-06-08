@@ -60,6 +60,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$HOME/.local -B cmake/build -S .
 cd cmake/build
 make install
 source ./rmtc-setup.bash
+cd -
 ```
 
 _Note_: You can replace `$HOME/.local` in the cmake command above with your installation directory of choice.
