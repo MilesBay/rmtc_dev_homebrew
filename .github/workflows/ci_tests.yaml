@@ -29,7 +29,7 @@ jobs:
 
     services:
       age:
-        image: apache/age
+        image: apache/age@sha256:4241e2d8bb86a6b2ea44e9ad06c73856e12b209de295124603a599dd7feb70eb
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
